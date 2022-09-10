@@ -251,7 +251,7 @@ img {}
     border-radius: 50%;
     bottom: 12rem;
     filter: blur(300px);
-    right: 30rem;
+    right: 12rem;
     animation: float_backgrounds linear 3s infinite;
 }
 
