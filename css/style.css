@@ -247,7 +247,7 @@ img {}
 .shape_4_large {
     width: 500px;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(104, 59, 59, 0.7);
     border-radius: 50%;
     bottom: 12rem;
     filter: blur(270px);
