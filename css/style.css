@@ -261,9 +261,9 @@ img {}
     height: 600px;
     background-color: rgba(184, 82, 204, 0.7);
     border-radius: 50%;
-    bottom: 15rem;
+    bottom: 16rem;
     filter: blur(200px);
-    right: 18rem;
+    right: 13rem;
     animation: float_backgrounds linear 10s infinite;
 }
 
