@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: var(--body-font);
+    overflow-x: hidden;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+img {}
+
+.header-head {
+
+    background: linear-gradient(107.98deg, #243338 0%, rgba(36, 51, 56, 0.93) 100.62%);
+}
+
+.container-div {
+    background-image: url(/img/noise.png);
+    height: 1080px;
+}
+
+.container--div {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 34px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-list-menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ul-div {
+    width: 50%;
+}
+
+.li-menu {
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.li-menu:hover {
+    color: #64D9FF;
+}
+
+.limenulogin {
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 10px 35px 10px 35px;
+    border: 1px solid #64D9FF;
+    transition: color 0.5s linear;
+    position: relative;
+    z-index: 1;
+    display: block;
+    transition: box-shadow 0.5s ease-in-out 0s;
+
+}
+
+.limenulogin:hover {
+    color: black;
+    box-shadow: 0px 0px 30px 4px #64D9FF;
+}
+
+
+.limenulogin::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #64D9FF;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+}
+
+.limenulogin:hover:before {
+    transform: scaleX(1);
+}
+
+.li-menu:after {
+    content: "";
+    position: absolute;
+    background-color: #64D9FF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+
+.li-menu:hover::after {
+    width: 100%;
+}
+
+.immerse {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 72px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.description-2 {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 72px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.grid_block {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    padding-top: 200px;
+
+}
+
+.text-description {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 72px;
+    color: white;
+    max-width: 949px;
+
+}
+
+.img_logo-aleogl {
+    width: 100%;
+    max-width: 470px;
+}
+
+.block_img-aleo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.img_logo-aleogl {
+    filter: drop-shadow(0 0px 80px rgb(51, 135, 177));
+    z-index: 2;
+    animation: float-aleo 4s ease-in-out infinite;
+}
+
+
+.podium {
+    filter: drop-shadow(0 0px 80px rgb(51, 135, 177));
+    width: 100%;
+    max-width: 470px;
+    z-index: 2;
+}
+
+.block_descrpt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.description-text-pg1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 42px;
+    color: #A9A9A9;
+}
+
+.shape_1_large,
+.shape_2_large,
+.shape_3_large {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.shape_1_large {
+    width: 700px;
+    height: 700px;
+    background-color: rgba(14, 87, 104, 0.7);
+    filter: blur(200px);
+
+}
+
+.shape_2_large {
+    width: 780px;
+    height: 780px;
+    background-color: rgba(8, 150, 150, 0.7);
+    filter: blur(200px);
+    right: 0;
+}
+
+.shape_3_large {
+    width: 757px;
+    height: 400px;
+    background-color: rgba(213, 85, 230, 0.7);
+    filter: blur(350px);
+    bottom: 0%;
+    border-radius: 50%;
+}
+
+@keyframes float-aleo {
+    0% {
+        transform: translateY(2rem);
+    }
+
+    50% {
+        transform: translateY(3.5rem);
+    }
+
+    100% {
+        transform: translateY(2rem);
+    }
+}
+
+.shape_lake {
+    position: absolute;
+    right: -25rem;
+    max-width: 1370px;
+    display: flex;
+    width: 100%;
+
+}
+
+.border-start {
+    padding: 27px 17px 27px 17px;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    max-width: fit-content;
+    gap: 20px;
+    align-items: center;
+    animation: float-button 2s ease-in-out infinite;
+
+    transition: 0.3s;
+    border: 1px solid #64D9FF;
+    transition: color 0.5s linear;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 0.5s ease-in-out 0s;
+    transition: transform 0.5s;
+    scale: 80%;
+    transition: 0.5s;
+}
+
+.text123 {
+    position: relative;
+}
+
+.text123:hover {
+}
+
+.button-go {
+}
+
+
+@keyframes float-button {
+    0% {
+        transform: translateX(2rem);
+        transform: translateY(2rem);
+    }
+
+    50% {
+        transform: translateX(2.5rem);
+        transform: translateY(2.1rem);
+    }
+
+    100% {
+        transform: translateX(2rem);
+        transform: translateY(2rem);
+    }
+}
+
+
+.border-start:hover{
+    box-shadow: 0px 0px 30px 4px #64D9FF;
+    scale: 90%;
+
+
+
+}
+
+.border-start:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(107.98deg, #64D9FF 0%, rgba(255, 255, 255, 0.93) 100.62%);
+    left: 0;
+    top: 0;
+    filter: blur(70px);
+    z-index: -2;
+    animation: bacgroundimg 20s linear infinite;
+    background-size: 400% 200%;
+    transform: scaleX(1);
+    transition: opacity 3s;
+    opacity: 0;
+
+}
+
+.border-start::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #64D9FF;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+}
+
+.border-start:hover:after {
+    opacity: 1;
+}
+
+.border-start:hover:before {
+    transform: scaleX(1);
+}
+
+
+@keyframes bacgroundimg {
+    0% {
+        background-position: 0% 0%;
+
+    }
+
+    50%
+    {
+        background-position: 400% 0%;
+
+    }
+
+    100%
+    {
+        background-position: 0% 0%;
+
+    }
+
+
+}
+
+
+
+
+.logoclass {
+    z-index: 2;
+}
+
+.fill-svg {
+
+}
